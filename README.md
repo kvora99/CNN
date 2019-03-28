@@ -24,4 +24,4 @@
 <p>I got an accuracy of 96% after finishing the training process. If you need a higher accuracy, you can adjust the network architecture and training parameters. You can also use pretrained weights which i have uploaded.</p>
 <p>To run code properly in your pc install requirements.txt file: 
   <blockquote>pip3 install -r requirements.txt</blockquote>
-<p>Download the dataset from here: https://www.kaggle.com/nafisur/dogs-vs-cats</>
+<p>Download the dataset from here: https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset</>
