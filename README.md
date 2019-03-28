@@ -1,4 +1,4 @@
-# Machine-learning-Algorithms
+# Machine-learning-Projects
 
 
 <h1>Cat & Dog Classification:</h1>
