@@ -9,5 +9,6 @@
 
 <p>I am using the Sequential model from Keras to form the Neural Network. Sequential Model is used to construct simple models with linear stack of layers.</p>
 <p>I got an accuracy of 86% after finishing the training process. If you need a higher accuracy, you can adjust the network architecture and training parameters. You can also use pretrained weights which i have uploaded.</p>
-<p>To run code properly in your pc install requirements.txt file: pip3 install -r requirements.txt</>
+<p>To run code properly in your pc install requirements.txt file: 
+  <blockquote>pip3 install -r requirements.txt</blockquote>
 <p>Download the dataset from here: https://www.kaggle.com/nafisur/dogs-vs-cats</>
