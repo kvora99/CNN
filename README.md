@@ -20,6 +20,6 @@
 | ![accuracy](https://user-images.githubusercontent.com/22933921/55153150-bd46c280-5177-11e9-8cd6-626e2aca0659.png)  | ![loss](https://user-images.githubusercontent.com/22933921/55153164-c9328480-5177-11e9-9be9-c9d8c97b5a7d.png) |
 
 <p>I am using the Sequential model from Keras to form the Neural Network. I got an accuracy of 96% after finishing the training process. If you need a higher accuracy, you can adjust the network architecture and training parameters. You can also use pretrained weights which i have uploaded.</p>
-<p>To run code properly in your pc install requirements.txt file: 
+<p>To run code properly in your pc install requirements.txt(same as catndog) file: 
   <blockquote>pip3 install -r requirements.txt</blockquote>
 <p>Download the dataset from here: https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset</>
