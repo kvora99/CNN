@@ -1,7 +1,7 @@
 # Machine-learning-Projects
 
 
-<h1>Cat & Dog Classification:</h1>
+<h3>Cat & Dog Classification:</h3>
 
 |   |  |
 | ------------- | ------------- |
