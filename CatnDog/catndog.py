@@ -52,21 +52,44 @@ history = model.fit_generator(train_gen, epochs=20, validation_data=test_gen)
 model.save('catndog.h5')
 
 
-# # summarize history for accuracy
-# plt.plot(history.history['acc'])
-# plt.plot(history.history['val_acc'])
-# plt.title('model accuracy')
-# plt.ylabel('accuracy')
-# plt.xlabel('epoch')
-# plt.legend(['train', 'test'], loc='upper left')
-# plt.savefig('accuracy.png')
-# plt.show()
-#
-# plt.plot(history.history['loss'])
-# plt.plot(history.history['val_loss'])
-# plt.title('model loss')
-# plt.ylabel('loss')
-# plt.xlabel('epoch')
-# plt.legend(['train', 'test'], loc='upper left')
-# plt.savefig('loss.png')
-# plt.show()
+# summarize history for accuracy
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('accuracy.png')
+plt.show()
+
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('loss.png')
+plt.show()
+
+
+#predictor 
+sz =64                                #depending upon your input shape
+model1 = load_model('catndog.h5')
+
+path = 'dataset/test_set/dogs'
+l = os.listdir(path)
+k = []
+for i in l:
+    try:
+        img = cv2.imread(path+'/'+i)
+        print(i)
+        img = cv2.resize(img, (sz, sz))
+        k.append(img)
+    except:
+        pass
+
+k = np.array(k)
+
+p = model1.predict(k)
+classes = model1.predict_classes(k)
+print(p)
